@@ -26,7 +26,7 @@ public class ChangePassController{
 			alert.show();
 			return;
 		}
-		MessageDigest md = MessageDigest.getInstance("MD5"); //message digest set as MD5
+		MessageDigest md = MessageDigest.getInstance("MD5"); //no changes
 		String password = currPwd.getText();
 		md.update(password.getBytes(StandardCharsets.UTF_8));
 		byte[] digest = md.digest();
